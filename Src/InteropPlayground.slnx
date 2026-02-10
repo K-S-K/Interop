@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ManagedClient/ManagedClient.csproj" Id="acf8b2b5-5469-41a4-addb-44fa522836de" />
+  <Project Path="NativeDeviceLib/NativeDeviceLib.vcxproj" Id="0b38b99b-b511-4255-90ce-78840c5e08b0">
+    <Platform Solution="Debug|x64" Project="ARM64" />
+  </Project>
+</Solution>
