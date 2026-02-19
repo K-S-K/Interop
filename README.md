@@ -24,7 +24,7 @@ The development was performed in Microsoft Visual Studio 2026.
 - Desktop development with C++
 - .NET desktop development
 
-The solution was developed and tested on macOS running on a Silicon M3 processor under Parallels virtualization environment with Windows 11 Pro. So the target machine can be different at the project configuration for users with different hardware sets.
+The solution was developed and tested on macOS running on a Silicon M3 processor under Parallels virtualization environment with Windows 11 Pro. Most likely, the target machine can differ in the project configuration for users with different hardware configurations.
 
 ## [Stage 1. Simplest implementation](Doc/01-Stage-01.md)
 
