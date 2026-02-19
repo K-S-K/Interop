@@ -5,7 +5,7 @@
 ### Description
 
 - C++  dll exporting a simple function, just int Sum(int x, int y){ return x+y; }
-- C# console application connects to the dll, call its function, and prints result to the console.
+- C# console application connects to the dll, calls its function, and prints the result to the console.
 
 ### Goal
 
@@ -60,7 +60,7 @@
 #### 1.2.2 Set architecture (critical)
 
 1. Build → Configuration Manager
-2. For Active solution platform:
+2. For the Active solution platform:
  • Choose ARM64
  • If missing → New… → ARM64 (or your architecture)
 3. Ensure:
@@ -169,7 +169,7 @@ internal class Program
 
 During debugging, Windows must find the DLL.
 
-The easiest way is to copy it manually, or even better, copy it by post-build step script.
+The easiest way is to copy it manually, or even better, copy it by a post-build step script.
 
 ### 1.6. Debugging both sides
 
