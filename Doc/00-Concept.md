@@ -2,7 +2,7 @@
 
 ## Concept
 
-The document describes technical requirements and restrictions of the project.
+The document outlines the project's technical requirements and restrictions.
 
 **The example modeling two projects, working together:**
 
@@ -11,7 +11,7 @@ The document describes technical requirements and restrictions of the project.
 
 ### 1. C ABI, not C++ ABI
 
-Even though dll is writing in C++, the exported surface must be C-style.
+Even though the DLL is written in C++, the exported surface must be C-style.
 
 Why:
 
