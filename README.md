@@ -41,7 +41,14 @@ At [Stage 1](Doc/01-Stage-01.md), the initial solution creation process is descr
 - The simplest C++ library with one function that accepts two parameters and returns the sum of them to the client.
 - The simplest C# console app which connects to the library, calls the function, and prints the result to the console.
 
+### [Stage 2. Simulated Device Driver](Doc/02-Stage-02.md)
+
+At [Stage 2](Doc/02-Stage-02.md), we emulate real (imaginary) device driver behavior:
+
+- The C++ library exposes two functions to emulate some "measurement" process with different durations.
+- The C# client calls these two functions in different tasks to have them working simultaneously, waits until both of them return those results, and prints the  results to the console.
+
 ### External Document References
 
-- Microsoft: [extern (C++)](https://learn.microsoft.com/en-us/cpp/cpp/extern-cpp?view=msvc-180)
+- Microsoft: [Extern (C++)](https://learn.microsoft.com/en-us/cpp/cpp/extern-cpp?view=msvc-180)
 - Microsoft: [Platform Invoke (P/Invoke)](https://learn.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
