@@ -8,13 +8,20 @@ namespace ManagedClient.LibWrapper;
 internal static class NativeMethods
 {
     /// <summary>
-    /// Sums two integers and returns the result.
+    /// Performs the first measurement operation and returns the result.
     /// </summary>
-    /// <param name="x">The first integer.</param>
-    /// <param name="y">The second integer.</param>
-    /// <returns>The sum of the two integers.</returns>
+    /// <returns>The result of the first measurement operation.</returns>
+    [DllImport(
+    "NativeDeviceLib.dll",
+    CallingConvention = CallingConvention.Cdecl)]
+    public static extern MeasureResult MeasureOne();
+
+    /// <summary>
+    /// Performs the second measurement operation and returns the result.
+    /// </summary>
+    /// <returns>The result of the second measurement operation.</returns>
     [DllImport(
         "NativeDeviceLib.dll",
         CallingConvention = CallingConvention.Cdecl)]
-    public static extern int Sum(int x, int y);
+    public static extern MeasureResult MeasureTwo();
 }

@@ -6,7 +6,22 @@
 #define NDL_API __declspec(dllimport)
 #endif
 
+#include <stdint.h>
+
 extern "C"
 {
-    NDL_API int __cdecl Sum(int x, int y);
+    enum class MeasureStatus : int32_t
+    {
+        Ok = 0,
+        Failed = 1
+    };
+
+    struct MeasureResult
+    {
+        double value;
+        MeasureStatus status;
+    };
+
+    NDL_API MeasureResult __cdecl MeasureOne();
+    NDL_API MeasureResult __cdecl MeasureTwo(); 
 }
