@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using ManagedClient.LibWrapper;
 
 namespace ManagedClient;
 
-
-internal static class NativeMethods
-{
-    [DllImport(
-        "NativeDeviceLib.dll",
-        CallingConvention = CallingConvention.Cdecl)]
-    public static extern int Sum(int x, int y);
-}
 
 internal class Program
 {
