@@ -8,7 +8,7 @@ In the first experiment with P/Invoke, everything was simple: one function call,
 
 What happens when native code blocks the control flow, runs in parallel, and the managed side must coordinate everything?
 
-At this experiment stage we emulate real (imaginary) device driver behavior:
+At this experiment stage, we emulate real (imaginary) device driver behavior:
 
 - The C++ library exposes two functions to emulate some "measurement" process with different durations.
 - The C# client calls these two functions in different tasks to have them working simultaneously, waits until both of them return those results, and prints the  results to the console.
@@ -78,7 +78,7 @@ Managed code should:
 
 As the project grows, it becomes necessary to separate the abstraction level, which serves as a liaison between native and managed worlds.
 
-**Note:** The better practice is to think about it from the very beginning. But to feel this pleasure of refactoring, it is better to do it now (and not feel the pain of refactoring later, when everything will be bigger). Just to remember it better.
+**Note:** The better practice is to think about it from the very beginning. But to feel the pleasure of refactoring, it is better to do it now (and not feel the pain later, when everything will be bigger). Just to remember it better.
 
 ### Project structure
 
@@ -125,7 +125,7 @@ NDL_API MeasureResult __cdecl MeasureOne();
 NDL_API MeasureResult __cdecl MeasureTwo(); 
 ```
 
-It is important to set the exact type of the enum value at the C++ side, to map it to the compatible type at the C# side.
+It is important to specify the exact enum type on the C++ side to map it to a compatible type on the C# side.
 
 #### Key points of this implementation
 
@@ -145,7 +145,7 @@ Create the directory for the ABI API at the C# client application, and add the f
 
 ### 2.3. Modify the managed client main code (C#)
 
-We should prepare tasks, execute them, wait for the completion of all, and print the results. Optionally, we can also measure and report the execution duration.
+We should prepare the tasks, execute them, wait for all to complete, and print the results. Optionally, we can also measure and report the execution duration.
 
 ```CSharp
 using System;
