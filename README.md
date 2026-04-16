@@ -4,7 +4,7 @@
 
 ## The motivation, purpose, and ideas
 
-Sometimes, when I work on hardware-related projects, I see that some tasks are better to implement in C++ than in C#. The reasons are performance-related, compatibility-related, and also culturally related. On the other hand, some functionality, such as web services or database communications, is more efficient to implement in C#. And I got curious: how easy or difficult is it to integrate the benefits of both technologies into a single solution? And, is it possible to debug the control flow transparently through the border between them, as if it were one homogeneous piece of code?
+Sometimes, when I work on hardware-related projects, I see that some tasks are better to implement in C++ than in C#. The reasons are performance-, compatibility-, and culturally related. On the other hand, some functionality, such as web services or database communication, is more efficient to implement in C#. And I got curious: how easy or difficult is it to integrate the benefits of both technologies into a single solution? And, is it possible to debug the control flow transparently through the border between them, as if it were one homogeneous piece of code?
 
 This project is the result of my series of experiments in this direction. Also, it can serve as a boilerplate for developing a native C++ DLL and a C# client EXE in a single Visual Studio solution.
 
