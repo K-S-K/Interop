@@ -7,7 +7,7 @@
 ### Description
 
 - C++  dll exporting a simple function, just int Sum(int x, int y){ return x+y; }
-- C# console application connects to the dll, calls its function, and prints the result to the console.
+- C# console application connects to the DLL, calls its function, and prints the result to the console.
 
 ### Goal
 
