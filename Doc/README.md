@@ -9,12 +9,16 @@
 
 ## Useful tips
 
-Every stage reflects adding of some level of abstraction, or some functional behavior. This dividing to stages can be useful for learning purposes, or for getting a boilerplate for a new project at necessary level of the project evolve step.
+Every stage reflects the addition of some level of abstraction or some functional behavior. This division into stages can be useful for learning or for providing a boilerplate for a new project at the appropriate stage of its evolution.
 
-All stages are marked by tags. It means we can use any stage as the template for the project by just checking out the corresponding stage.
+All stages are marked by tags. It means we can use any stage as the project template by just checking out the corresponding stage.
 
-To see the tags just type the command
+To see the tags, just type the command
 
 ```bash
 git tag --list
 ```
+
+## Diagram Drawing Tool
+
+[Claude discussion](https://claude.ai/chat/daf73ca9-472f-41c4-abf9-fc3d70ca1fb6)
