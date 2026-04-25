@@ -52,3 +52,4 @@ At [Stage 2](Doc/02-Stage-02.md), we emulate real (imaginary) device driver beha
 
 - Microsoft: [Extern (C++)](https://learn.microsoft.com/en-us/cpp/cpp/extern-cpp?view=msvc-180)
 - Microsoft: [Platform Invoke (P/Invoke)](https://learn.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
+- Microsoft: [Use SIMD-accelerated numeric types](https://learn.microsoft.com/en-us/dotnet/standard/simd)
